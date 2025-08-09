@@ -1,18 +1,54 @@
 "use client";
+import { TextReveal } from "@/components/magicui/text-reveal";
+import { Dot } from "lucide-react";
 import React from "react";
 import { Element } from "react-scroll";
 
 function AboutUs() {
   return (
-    <div className="bg-background-secondary-foreground flex justify-center">
-      <Element name="nosotros" className="max-w-7xl py-20">
-        <h1 className="mt-8 text-background-secondary text-2xl">Nosotros</h1>
-        <span className="text-5xl text-background-secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          repellat provident quam? Enim natus consequuntur perspiciatis
-          consectetur magni in necessitatibus dolor vel, consequatur eveniet
-          itaque molestiae vero nemo architecto reprehenderit!
-        </span>
+    <div className="bg-background flex justify-center">
+      <Element
+        name="nosotros"
+        className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-20 py-40"
+      >
+        <h2 className="text-foreground text-2xl font-semibold flex items-center gap-2">
+          <span>
+            <Dot size={24} />
+          </span>
+          <span>Nosotros</span>
+        </h2>
+        <TextReveal
+          className="text-6xl text-foreground "
+          endContent={
+            <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
+              {/* Primera caja: +30 años */}
+              <div className="border border-foreground/40 p-2.5 min-w-[200px] w-full text-center">
+                <div className="text-foreground text-3xl font-medium">
+                  +30 años
+                </div>
+              </div>
+
+              {/* Segunda caja: +7K pacientes */}
+              <div className="border border-foreground/40 p-2.5 min-w-[200px] w-full text-center">
+                <div className="text-foreground text-3xl font-medium">
+                  +7K pacientes
+                </div>
+              </div>
+
+              {/* Tercera caja: +10K evaluaciones */}
+              <div className="border border-foreground/40 p-2.5 min-w-[200px] w-full  text-center">
+                <div className="text-foreground text-3xl font-medium">
+                  +10K evaluaciones
+                </div>
+              </div>
+            </div>
+          }
+        >
+          En D&C somos un equipo interdisciplinario que combina innovación
+          tecnológica, programas digitales, realidad virtual y Play Attention
+          para abordar de forma integral problemas de aprendizaje, memoria,
+          atención y control emocional en todas las edades.
+        </TextReveal>       
       </Element>
     </div>
   );

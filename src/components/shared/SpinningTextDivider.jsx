@@ -8,7 +8,7 @@ export function SpinningTextDivider() {
   return (
     <div className="flex justify-center relative">
       <div className="relative">
-        <SpinningText radius={7} className="text-xl mix-blend-exclusion">
+        <SpinningText radius={7} className="text-xl font-semibold text-background-secondary-foreground tracking-widest mix-blend-exclusion">   
           Explora más • Explora más • Explora más •
         </SpinningText>
         <div
@@ -16,7 +16,7 @@ export function SpinningTextDivider() {
           style={{ pointerEvents: "auto" }}
         >
           <Link to="nosotros" smooth={true} duration={500}>
-            <ArrowDown size={64} />
+            <ArrowDown size={64} className="text-background-secondary-foreground"/>
           </Link>
         </div>
       </div>
