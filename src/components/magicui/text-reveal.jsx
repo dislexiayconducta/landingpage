@@ -22,7 +22,7 @@ export const TextReveal = ({ children, className, endContent }) => {
   return (
     <div ref={targetRef} className={cn("relative z-0 h-[200vh]", className)}>
       {/* Sticky que contiene texto y contenedor juntos */}
-      <div className="sticky top-0 flex flex-col justify-between h-screen max-w-5xl mx-auto px-4 py-8">
+      <div className="sticky top-0 flex flex-col justify-between h-svh max-w-full mx-auto py-8">
         
         {/* Texto arriba */}
         <span className="flex flex-wrap text-3xl font-medium text-foreground/40 dark:text-white/20 md:text-4xl lg:text-5xl xl:text-6xl">

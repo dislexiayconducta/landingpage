@@ -6,10 +6,10 @@ import { Element } from "react-scroll";
 
 function AboutUs() {
   return (
-    <div className="bg-background flex justify-center">
+    <div className="relative bg-background flex justify-center px-4 sm:px-6 lg:px-8 xl:px-20 py-40 z-20">
       <Element
         name="nosotros"
-        className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-20 py-40"
+        className="max-w-[1440px] mx-auto"
       >
         <h2 className="text-foreground text-2xl font-semibold flex items-center gap-2">
           <span>

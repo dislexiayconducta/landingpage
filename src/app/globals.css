@@ -46,25 +46,25 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   /* Neutros */
-  --color-neutral-0: var(--neutral-0);
-  --color-neutral-10: var(--neutral-10);
-  --color-neutral-20: var(--neutral-20);
-  --color-neutral-30: var(--neutral-30);
-  --color-neutral-40: var(--neutral-40);
-  --color-neutral-50: var(--neutral-50);
-  --color-neutral-60: var(--neutral-60);
-  --color-neutral-70: var(--neutral-70);
-  --color-neutral-80: var(--neutral-80);
-  --color-neutral-90: var(--neutral-90);
-  --color-neutral-100: var(--neutral-100);
-  --color-neutral-200: var(--neutral-200);
-  --color-neutral-300: var(--neutral-300);
-  --color-neutral-400: var(--neutral-400);
-  --color-neutral-500: var(--neutral-500);
-  --color-neutral-600: var(--neutral-600);
-  --color-neutral-700: var(--neutral-700);
-  --color-neutral-800: var(--neutral-800);
-  --color-neutral-900: var(--neutral-900);
+  --color-neutral-b0: var(--neutral-b0);
+  --color-neutral-b10: var(--neutral-b10);
+  --color-neutral-b20: var(--neutral-b20);
+  --color-neutral-b30: var(--neutral-b30);
+  --color-neutral-b40: var(--neutral-b40);
+  --color-neutral-b50: var(--neutral-b50);
+  --color-neutral-b60: var(--neutral-b60);
+  --color-neutral-b70: var(--neutral-b70);
+  --color-neutral-b80: var(--neutral-b80);
+  --color-neutral-b90: var(--neutral-b90);
+  --color-neutral-b100: var(--neutral-b100);
+  --color-neutral-b200: var(--neutral-b200);
+  --color-neutral-b300: var(--neutral-b300);
+  --color-neutral-b400: var(--neutral-b400);
+  --color-neutral-b500: var(--neutral-b500);
+  --color-neutral-b600: var(--neutral-b600);
+  --color-neutral-b700: var(--neutral-b700);
+  --color-neutral-b800: var(--neutral-b800);
+  --color-neutral-b900: var(--neutral-b900);
 }
 
 :root {
@@ -104,25 +104,25 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   /* Neutros */
-  --neutral-0: #ffffff;
-  --neutral-10: #fafafa;
-  --neutral-20: #f5f5f5;
-  --neutral-30: #ececec;
-  --neutral-40: #e0e0e0;
-  --neutral-50: #c3c3c3;
-  --neutral-60: #b4b4b4;
-  --neutral-70: #a8a8a8;
-  --neutral-80: #999999;
-  --neutral-90: #8b8b8b;
-  --neutral-100: #7c7c7c;
-  --neutral-200: #6e6e6e;
-  --neutral-300: #5f5f5f;
-  --neutral-400: #535353;
-  --neutral-500: #454545;
-  --neutral-600: #393939;
-  --neutral-700: #282828;
-  --neutral-800: #191919;
-  --neutral-900: #0d0d0d;
+  --neutral-b0: #ffffff;
+  --neutral-b10: #fafafa;
+  --neutral-b20: #f5f5f5;
+  --neutral-b30: #ebebeb;
+  --neutral-b40: #dedede;
+  --neutral-b50: #bfbfbf;
+  --neutral-b60: #b0b0b0;
+  --neutral-b70: #a3a3a3;
+  --neutral-b80: #949494;
+  --neutral-b90: #858585;
+  --neutral-b100: #757575;
+  --neutral-b200: #666666;
+  --neutral-b300: #575757;
+  --neutral-b400: #4a4a4a;
+  --neutral-b500: #3b3b3b;
+  --neutral-b600: #2e2e2e;
+  --neutral-b700: #1c1c1c;
+  --neutral-b800: #0d0d0d;
+  --neutral-b900: #000000;
 }
 
 .dark {
@@ -159,27 +159,26 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-
   /* Neutros */
-  --neutral-0: #ffffff;
-  --neutral-10: #fafafa;
-  --neutral-20: #f5f5f5;
-  --neutral-30: #ececec;
-  --neutral-40: #e0e0e0;
-  --neutral-50: #c3c3c3;
-  --neutral-60: #b4b4b4;
-  --neutral-70: #a8a8a8;
-  --neutral-80: #999999;
-  --neutral-90: #8b8b8b;
-  --neutral-100: #7c7c7c;
-  --neutral-200: #6e6e6e;
-  --neutral-300: #5f5f5f;
-  --neutral-400: #535353;
-  --neutral-500: #454545;
-  --neutral-600: #393939;
-  --neutral-700: #282828;
-  --neutral-800: #191919;
-  --neutral-900: #0d0d0d;
+  --neutral-b0: #ffffff;
+  --neutral-b10: #fafafa;
+  --neutral-b20: #f5f5f5;
+  --neutral-b30: #ebebeb;
+  --neutral-b40: #dedede;
+  --neutral-b50: #bfbfbf;
+  --neutral-b60: #b0b0b0;
+  --neutral-b70: #a3a3a3;
+  --neutral-b80: #949494;
+  --neutral-b90: #858585;
+  --neutral-b100: #757575;
+  --neutral-b200: #666666;
+  --neutral-b300: #575757;
+  --neutral-b400: #4a4a4a;
+  --neutral-b500: #3b3b3b;
+  --neutral-b600: #2e2e2e;
+  --neutral-b700: #1c1c1c;
+  --neutral-b800: #0d0d0d;
+  --neutral-b900: #000000;
 }
 
 @layer base {
@@ -193,4 +192,25 @@
   ::selection {
     @apply bg-primary text-white;
   }
+}
+
+/* Estilos para Lenis - Scroll suave */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

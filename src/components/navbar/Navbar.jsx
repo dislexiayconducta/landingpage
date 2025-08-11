@@ -12,7 +12,7 @@ export default function Navbar() {
             <Link
               to="inicio"
               smooth
-              className="text-neutral-0 font-medium text-2xl cursor-pointer"
+              className="text-neutral-b0 font-medium text-2xl cursor-pointer"
             >
               DislexiaConducta
             </Link>
