@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
-export const TextReveal = ({ children, className, endContent }) => {
+export const TextReveal = ({ children, className, endContent, dark = false }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -25,12 +25,24 @@ export const TextReveal = ({ children, className, endContent }) => {
       <div className="sticky top-0 flex flex-col justify-between h-svh max-w-full mx-auto py-8">
         
         {/* Texto arriba */}
-        <span className="flex flex-wrap text-3xl font-medium text-foreground/40 dark:text-white/20 md:text-4xl lg:text-5xl xl:text-6xl">
+        <span
+          className={cn(
+            "flex flex-wrap text-3xl font-medium md:text-4xl lg:text-5xl xl:text-6xl",
+            dark
+              ? "text-background/40 dark:text-white/40"
+              : "text-foreground/40 dark:text-white/20"
+          )}
+        >
           {words.map((word, i) => {
             const start = i / words.length;
             const end = start + 1 / words.length;
             return (
-              <Word key={i} progress={scrollYProgress} range={[start, end]}>
+              <Word
+                key={i}
+                progress={scrollYProgress}
+                range={[start, end]}
+                dark={dark}
+              >
                 {word}
               </Word>
             );
@@ -39,10 +51,7 @@ export const TextReveal = ({ children, className, endContent }) => {
 
         {/* Contenedor abajo */}
         {endContent && (
-          <motion.div
-            style={{ opacity: endOpacity, y: endY }}
-            className="mt-8"
-          >
+          <motion.div style={{ opacity: endOpacity, y: endY }} className="mt-8">
             {endContent}
           </motion.div>
         )}
@@ -51,12 +60,15 @@ export const TextReveal = ({ children, className, endContent }) => {
   );
 };
 
-const Word = ({ children, progress, range }) => {
+const Word = ({ children, progress, range, dark }) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
     <span className="relative mx-1 lg:mx-1.5">
       <span className="absolute opacity-30">{children}</span>
-      <motion.span style={{ opacity }} className="text-black dark:text-white">
+      <motion.span
+        style={{ opacity }}
+        className={dark ? "text-white" : "text-black dark:text-white"}
+      >
         {children}
       </motion.span>
     </span>

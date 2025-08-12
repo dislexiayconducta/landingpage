@@ -20,9 +20,9 @@ function Highlights() {
   return (
     <section
       ref={containerRef}
-      className="absolute h-[200vh] lg:h-[150vh] w-full overflow-hidden"
+      className="relative min-h-[150vh] w-full overflow-hidden"
     >
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto overflow-hidden">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto overflow-hidden h-full flex items-center">
         {/* Texto */}
         <ScrollVelocityContainer className="fixed top-1/2 -translate-y-1/2 left-0 right-0 z-10">
           <motion.h2 className="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-medium text-neutral-b200 leading-none">
@@ -43,7 +43,7 @@ function Highlights() {
         </ScrollVelocityContainer>
 
         {/* Imágenes */}
-        <div className="relative h-full min-h-[200vh] lg:min-h-[150vh] w-full mt-12">
+        <div className="relative flex items-center h-full min-h-[150vh] w-full my-12">
           {images.map((image, index) => {
             const { yCombined, floatConfig } = useFloatingEffect({
               scrollYProgress,

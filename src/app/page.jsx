@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
-import { SpinningTextDivider } from "@/components/shared";
+import { SpinningTextDivider, TextDivider } from "@/components/shared";
 import AboutUs from "@/features/about-us/AboutUs";
+import ForWhom from "@/features/for-whom";
 import Hero from "@/features/hero";
 import Highlights from "@/features/highlights";
 
@@ -14,6 +15,8 @@ export default function Home() {
       <SpinningTextDivider />
       <AboutUs />
       <Highlights />
+      <TextDivider />
+      <ForWhom />
     </main>
   );
 }
