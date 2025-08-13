@@ -1,6 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import { LenisProvider } from "@/components/LenisProvider";
+import { LenisProvider } from "@/components/providers/LenisProvider";
 
 export const neueHaasDisplay = localFont({
   src: [

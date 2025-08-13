@@ -20,7 +20,7 @@ function Highlights() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[150vh] w-full overflow-hidden"
+      className="bg-background-secondary-foreground relative min-h-[150vh] w-full overflow-hidden"
     >
       <div className="relative z-10 w-full max-w-[1440px] mx-auto overflow-hidden h-full flex items-center">
         {/* Texto */}
