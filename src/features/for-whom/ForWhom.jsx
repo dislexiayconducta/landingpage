@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 
 function ForWhom() {
   return (
-    <div className="relative bg-foreground flex justify-center px-4 sm:px-6 lg:px-8 xl:px-20 py-40 z-20">
+    <div className="relative bg-background-secondary flex justify-center px-4 sm:px-6 lg:px-8 xl:px-20 pt-40 z-20">
       <Element name="para-ti" className="max-w-[1440px] mx-auto">
         <h2 className="text-background text-2xl font-semibold flex items-center gap-2">
           <span>
