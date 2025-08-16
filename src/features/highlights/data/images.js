@@ -14,7 +14,7 @@ export const images = [
     alt: "Niña sentada en un escritorio con los codos sobre la mesa y las manos en el rostro, mirando hacia adelante, con libros abiertos frente a ella.",
     orientation: "vertical",
     positions: {
-      desktop: "top-80 left-1/2 -translate-x-1/2",
+      desktop: "top-80 left-2/3 -translate-x-2/3",
       tablet: "top-80 right-0",
       mobile: "top-60 right-0",
     },
@@ -24,7 +24,7 @@ export const images = [
     alt: "Adolescente sentado frente a un pizarrón con fórmulas matemáticas, sonriendo mientras usa una tableta digital.",
     orientation: "vertical",
     positions: {
-      desktop: "top-64 -left-8",
+      desktop: "top-64 left-1/3 translate-x-1/3",
       tablet: "top-48 -left-4",
       mobile: "top-120 left-4",
     },

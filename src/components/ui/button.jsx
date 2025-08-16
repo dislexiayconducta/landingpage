@@ -17,6 +17,8 @@ const buttonVariants = cva(
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
           "text-background-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full",
+        ternary:
+          "bg-neutral-b0 text-neutral-b800 relative after:absolute rounded-[2px] text-xl hover:text-neutral-b0 hover:bg-transparent hover:border-neutral-b0 hover:border-[1px] hover:border-solid box-border border-[1px] border-transparent",
         ghost:
           "hover:text-background-secondary-foreground text-background-secondary-foreground/80",
         link: "text-primary underline-offset-4 hover:underline",
@@ -28,6 +30,7 @@ const buttonVariants = cva(
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         option: "h-9 px-0 py-2 has-[>svg]:px-0",
         icon: "size-9 [&_svg:not([class*='size-'])]:size-7",
+        cta: "h-9 px-2.5 py-6 has-[>svg]:px-2.5 [&_svg:not([class*='size-'])]:size-5",
       },
     },
     defaultVariants: {

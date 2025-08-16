@@ -1,23 +1,14 @@
 "use client";
 import { TextReveal } from "@/components/magicui/text-reveal";
-import { Dot } from "lucide-react";
 import React from "react";
 import { Element } from "react-scroll";
 
 function AboutUs() {
   return (
     <div className="relative bg-background flex justify-center px-4 sm:px-6 lg:px-8 xl:px-20 py-40 z-20">
-      <Element
-        name="nosotros"
-        className="max-w-[1440px] mx-auto"
-      >
-        <h2 className="text-foreground text-2xl font-semibold flex items-center gap-2">
-          <span>
-            <Dot size={24} />
-          </span>
-          <span>Nosotros</span>
-        </h2>
+      <Element name="nosotros" className="max-w-[1440px] mx-auto">
         <TextReveal
+          title="Nosotros"
           className="text-6xl text-foreground "
           endContent={
             <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
@@ -48,7 +39,7 @@ function AboutUs() {
           tecnológica, programas digitales, realidad virtual y Play Attention
           para abordar de forma integral problemas de aprendizaje, memoria,
           atención y control emocional en todas las edades.
-        </TextReveal>       
+        </TextReveal>
       </Element>
     </div>
   );

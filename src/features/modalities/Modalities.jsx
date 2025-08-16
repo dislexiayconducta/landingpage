@@ -9,7 +9,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 
 export default function Modalities() {
   const [api, setApi] = React.useState();
@@ -24,24 +24,26 @@ export default function Modalities() {
   }, [api]);
 
   return (
-    <section className="relative bg-background-secondary flex flex-col justify-center z-20">
+    <section className="relative bg-background-secondary flex flex-col justify-center z-20 px-4 sm:px-6 lg:px-8 xl:px-20">
       <Element
         name="modalidades"
         className="max-w-[1440px] mx-auto w-full mb-20"
       >
         {/* Header con título y botón */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 px-4 sm:px-6 lg:px-8 xl:px-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 ">
           <h2 className="text-background-secondary-foreground text-5xl md:text-6xl lg:text-7xl font-medium leading-none">
             Modalidades
           </h2>
 
-          <Button variant="secondary">
-            Reservar <ArrowRight size={20} />
-          </Button>
+          <Link to="contact" smooth>
+            <Button variant="secondary">
+              Reservar <ArrowRight size={20} />
+            </Button>
+          </Link>
         </div>
 
         {/* Fila de imágenes */}
-        <div className="lg:flex gap-0 w-full h-[500px] hidden px-4 sm:px-6 lg:px-8 xl:px-20">
+        <div className="lg:flex gap-0 w-full h-[500px] hidden ">
           {modalitiesData.map((modality) => (
             <motion.div
               key={modality.id}

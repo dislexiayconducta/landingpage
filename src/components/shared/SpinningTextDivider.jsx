@@ -3,6 +3,7 @@ import { SpinningText } from "@/components/magicui/spinning-text";
 import { ArrowDown } from "lucide-react";
 import React from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 export function SpinningTextDivider() {
   return (
@@ -18,10 +19,21 @@ export function SpinningTextDivider() {
         style={{ pointerEvents: "auto" }}
       >
         <Link to="nosotros" smooth={true} duration={500}>
-          <ArrowDown
-            size={64}
-            className="text-background-secondary-foreground"
-          />
+          <motion.div
+            animate={{
+              y: [-5, 5, -5],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <ArrowDown
+              size={64}
+              className="text-background-secondary-foreground"
+            />
+          </motion.div>
         </Link>
       </div>
     </div>

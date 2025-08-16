@@ -2,8 +2,15 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
+import { Dot } from "lucide-react";
 
-export const TextReveal = ({ children, className, endContent, dark = false }) => {
+export const TextReveal = ({
+  children,
+  className,
+  endContent,
+  dark = false,
+  title,
+}) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -22,8 +29,20 @@ export const TextReveal = ({ children, className, endContent, dark = false }) =>
   return (
     <div ref={targetRef} className={cn("relative z-0 h-[200vh]", className)}>
       {/* Sticky que contiene texto y contenedor juntos */}
-      <div className="sticky top-0 flex flex-col justify-between h-svh max-w-full mx-auto py-8">
-        
+      <div className="sticky top-0 flex flex-col justify-center h-svh max-w-full mx-auto py-8">
+        {/* Título arriba del texto */}
+        {title && (
+          <h2
+            className={cn(
+              "flex items-center gap-2 text-2xl font-semibold mb-4",
+              dark ? "text-white" : "text-black dark:text-white"
+            )}
+          >
+            <Dot size={24} />
+            {title}
+          </h2>
+        )}
+
         {/* Texto arriba */}
         <span
           className={cn(

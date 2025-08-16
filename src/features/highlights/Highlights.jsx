@@ -24,18 +24,24 @@ function Highlights() {
     >
       <div className="relative z-10 w-full max-w-[1440px] mx-auto overflow-hidden h-full flex items-center">
         {/* Texto */}
-        <ScrollVelocityContainer className="fixed top-1/2 -translate-y-1/2 left-0 right-0 z-10">
-          <motion.h2 className="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-medium text-neutral-b200 leading-none">
+        <ScrollVelocityContainer className="fixed top-0 left-0 right-0 z-10">
+          <motion.h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mt-8 lg:mt-16">
             <ScrollVelocityRow velocity={20} direction={1}>
               Para todas las edades{"  "}
             </ScrollVelocityRow>
           </motion.h2>
-          <motion.h3 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mt-4 lg:mt-8">
+        </ScrollVelocityContainer>
+        
+        <ScrollVelocityContainer className="fixed top-1/2 -translate-y-1/2 left-0 right-0 z-10">
+          <motion.h3 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none">
             <ScrollVelocityRow velocity={20} direction={-1}>
               Multi formatos{"  "}
             </ScrollVelocityRow>
           </motion.h3>
-          <motion.h4 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-neutral-b200 leading-none mt-6 lg:mt-12 text-right">
+        </ScrollVelocityContainer>
+        
+        <ScrollVelocityContainer className="fixed bottom-0 left-0 right-0 z-10">
+          <motion.h4 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mb-8 lg:mb-16 text-right">
             <ScrollVelocityRow velocity={20} direction={1}>
               Planes híbridos{"  "}
             </ScrollVelocityRow>
