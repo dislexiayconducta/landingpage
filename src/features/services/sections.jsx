@@ -22,7 +22,7 @@ export function Diagnostics() {
       </p>
 
       <div className="space-y-2">
-        <ScrollArea className="h-full md:h-[200px] lg:h-[320px] overflow-auto">
+        <ScrollArea className="h-full md:h-[200px] lg:h-[220px] xl:h-[320px] overflow-auto">
           <Table className="border-none w-full table-fixed">
             <TableBody>
               <TableRow className="border-none hover:bg-transparent">

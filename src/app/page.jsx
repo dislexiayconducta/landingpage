@@ -5,6 +5,7 @@ import Hero from "@/features/hero";
 import Highlights from "@/features/highlights";
 import Modalities from "@/features/modalities";
 import Services from "@/features/services";
+import { CTA } from "@/features/cta";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ForWhom />
       <Modalities />
       <Services />
+      <CTA />
       
     </main>
   );

@@ -14,16 +14,6 @@ export default function Services() {
         name="servicios"
         className="max-w-[1440px] mx-auto w-full"
       >
-        {/* Título principal - fuera del área sticky */}
-        <motion.h2
-          className="text-background-secondary-foreground text-5xl md:text-6xl lg:text-7xl font-medium"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          Servicios
-        </motion.h2>
-
         {/* Contenedor scroll Desktop */}
         <DesktopServices />
 

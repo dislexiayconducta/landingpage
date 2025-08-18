@@ -14,8 +14,18 @@ export default function DesktopServices() {
   return (
     <div ref={targetRef} className="relative z-0 h-[200vh] hidden lg:block">
       {/* Sticky que contiene el contenido de servicios */}
-      <div className="sticky top-0 flex flex-col justify-start pt-12 h-svh max-w-full mx-auto">
+      <div className="sticky top-0 flex flex-col justify-center h-svh max-w-full mx-auto">
         <ServicesProvider className="w-full">
+          {/* Título dentro del contenedor sticky */}
+          <motion.h2
+            className="text-background-secondary-foreground text-5xl md:text-6xl lg:text-7xl font-medium mb-8 xl:mb-10"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            Servicios
+          </motion.h2>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full">
             {/* Columna izquierda */}
             <motion.div

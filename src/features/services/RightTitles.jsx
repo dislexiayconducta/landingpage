@@ -59,8 +59,8 @@ export default function RightTitles({ scrollProgress }) {
           <span
             className={
               key === activeKey
-                ? "text-neutral-b0 text-3xl lg:text-4xl xl:text-5xl font-semibold"
-                : "text-neutral-b70 text-3xl lg:text-4xl xl:text-5xl font-semibold"
+                ? "text-neutral-b0 text-2xl lg:text-3xl xl:text-5xl font-semibold"
+                : "text-neutral-b70 text-2xl lg:text-3xl xl:text-5xl font-semibold"
             }
           >
             {TITLES[key]}

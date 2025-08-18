@@ -30,7 +30,7 @@ export default function Modalities() {
         className="max-w-[1440px] mx-auto w-full mb-20"
       >
         {/* Header con título y botón */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 ">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 xl:mb-10">
           <h2 className="text-background-secondary-foreground text-5xl md:text-6xl lg:text-7xl font-medium leading-none">
             Modalidades
           </h2>

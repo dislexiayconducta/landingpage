@@ -210,6 +210,10 @@
   ::selection {
     @apply bg-primary text-white;
   }
+
+  .gradient {
+    background: linear-gradient(134.8deg, #4368B0 13.6%, #86A9BC 174.59%);
+  }
 }
 
 /* Estilos para Lenis - Scroll suave */
