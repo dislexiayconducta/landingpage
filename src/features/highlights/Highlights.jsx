@@ -35,7 +35,7 @@ function Highlights() {
         <ScrollVelocityContainer className="fixed top-1/2 -translate-y-1/2 left-0 right-0 z-10">
           <motion.h3 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none">
             <ScrollVelocityRow velocity={20} direction={-1}>
-              Multi formatos{"  "}
+              Multiformatos{"  "}
             </ScrollVelocityRow>
           </motion.h3>
         </ScrollVelocityContainer>

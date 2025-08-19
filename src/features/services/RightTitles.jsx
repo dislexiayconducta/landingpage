@@ -11,7 +11,7 @@ const TITLES = {
   cognitiveRehab: "Rehabilitación Cognitiva",
   behavioralRegulation: "Regulación Conductual",
   cbt: "TCC",
-  playAttention: "Play Attention",
+  playAttention: "Play Attention®",
   schoolTutoring: "Tutoría Escolar",
   mindfulness: "Mindfulness",
 };

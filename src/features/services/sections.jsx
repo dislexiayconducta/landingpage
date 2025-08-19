@@ -111,7 +111,7 @@ export function Treatments() {
     <motion.div {...base} className="space-y-3">
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
         Planes de intervención personalizados para abordar desafíos cognitivos,
-        emocionales y conductuales. Siempre adaptados a cada etapa y necesidad
+        emocionales y conductuales. Siempre adaptados a cada etapa y necesidad.
       </p>
     </motion.div>
   );
@@ -122,7 +122,7 @@ export function CognitiveRehab() {
     <motion.div {...base} className="space-y-3">
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
         Entrenamientos dirigidos a recuperar o fortalecer funciones cognitivas
-        afectadas como la memoria, la atención o el razonamiento
+        afectadas como la memoria, la atención o el razonamiento.
       </p>
     </motion.div>
   );
@@ -134,7 +134,7 @@ export function BehavioralRegulation() {
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
         Estrategias orientadas a mejorar el manejo de impulsos, la conducta y la
         toma de decisiones, fortaleciendo el vínculo entre emoción y
-        comportamiento
+        comportamiento.
       </p>
     </motion.div>
   );
@@ -145,7 +145,7 @@ export function CBT() {
     <motion.div {...base} className="space-y-3">
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
         Terapia que enfrenta o modifica tus pensamientos y genera bienestar
-        y autorregulación
+        y autorregulación.
       </p>
     </motion.div>
   );
@@ -157,12 +157,12 @@ export function PlayAttention() {
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
         Sistema innovador de neurotecnología basado en neurofeedback que mejora
         la atención, el autocontrol y la función ejecutiva. Tecnología inspirada
-        en la NASA
+        en la NASA.
       </p>
 
       <Link href="https://playattentionargentina.com/" target="_blank">
         <Button variant="ternary" size="cta">
-          Visitar Play Attention Argentina <ArrowUpRight size={24} />
+          Visitar Play Attention® Argentina <ArrowUpRight size={24} />
         </Button>
       </Link>
     </motion.div>
@@ -173,7 +173,7 @@ export function SchoolTutoring() {
   return (
     <motion.div {...base} className="space-y-3">
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
-        Apoyo en planificación, técnicas de estudio y preparación para exámenes
+        Apoyo en planificación, técnicas de estudio y preparación para exámenes.
       </p>
     </motion.div>
   );
@@ -184,7 +184,7 @@ export function Mindfulness() {
     <motion.div {...base} className="space-y-3">
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
         Prácticas guiadas con realidad virtual y/o con tecnología de play
-        attention para que sea concreta tu vivencia de atención plena
+        attention para que sea concreta tu vivencia de atención plena.
       </p>
     </motion.div>
   );

@@ -31,8 +31,10 @@ const CTA = () => {
           Realiza una breve autoevaluación online para detectar posibles signos
           de <span className="font-semibold">dislexia</span>,{" "}
           <span className="font-semibold">discalculia</span> o{" "}
-          <span className="font-semibold">ansiedad</span>. Resultados inmediatos
-          y orientativos para guiar el próximo paso.
+          <span className="font-semibold">ansiedad</span>. 
+        </p>
+        <p className="text-lg md:text-xl text-neutral-b30 font-semibold mb-6 max-w-3xl mx-auto leading-relaxed">
+          Resultados inmediatos y orientativos para guiar el próximo paso.
         </p>
 
         {/* Enlaces de acción */}

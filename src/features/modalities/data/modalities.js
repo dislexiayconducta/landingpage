@@ -19,7 +19,7 @@ export const modalitiesData = [
     id: 3,
     image: "/imgs/modalities/modality-3.webp",
     alt: "Biofeedback y Monitoreo",
-    title: "Play Attention",
+    title: "Play Attention®",
     subtitle: "Neurotecnología",
     delay: 0.3
   },

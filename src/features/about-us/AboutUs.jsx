@@ -36,7 +36,7 @@ function AboutUs() {
           }
         >
           En D&C somos un equipo interdisciplinario que combina innovación
-          tecnológica, programas digitales, realidad virtual y Play Attention
+          tecnológica, programas digitales, realidad virtual y Play Attention®
           para abordar de forma integral problemas de aprendizaje, memoria,
           atención y control emocional en todas las edades.
         </TextReveal>

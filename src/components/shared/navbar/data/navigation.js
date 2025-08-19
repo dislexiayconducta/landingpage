@@ -13,7 +13,7 @@ export const navigationLinks = [
   },
   {
     to: "para-ti",
-    label: "Para quien",
+    label: "Para quién",
     isHighlighted: false,
     showInDesktop: true,
   },

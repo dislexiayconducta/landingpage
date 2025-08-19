@@ -10,10 +10,7 @@ import { Button } from "@/components/ui/button";
 export default function Services() {
   return (
     <section className="relative bg-background-secondary py-20 lg:py-40 z-20 px-4 sm:px-6 lg:px-8 xl:px-20">
-      <Element
-        name="servicios"
-        className="max-w-[1440px] mx-auto w-full"
-      >
+      <Element name="servicios" className="max-w-[1440px] mx-auto w-full">
         {/* Contenedor scroll Desktop */}
         <DesktopServices />
 
@@ -22,7 +19,7 @@ export default function Services() {
 
         {/* Call to Action */}
         <motion.div
-          className="text-center"
+          className="text-center mt-12"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -33,7 +30,11 @@ export default function Services() {
           </h3>
 
           <Link href="#" target="_blank">
-            <Button variant="ternary" size="cta" className="w-full sm:max-w-max">
+            <Button
+              variant="ternary"
+              size="cta"
+              className="w-full sm:max-w-max"
+            >
               Hablar con un especialista
               <ArrowUpRight size={24} />
             </Button>
