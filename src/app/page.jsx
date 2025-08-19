@@ -5,6 +5,7 @@ import Hero from "@/features/hero";
 import Highlights from "@/features/highlights";
 import Modalities from "@/features/modalities";
 import Services from "@/features/services";
+import Team from "@/features/team";
 import { CTA } from "@/features/cta";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Modalities />
       <Services />
       <CTA />
+      <Team />
       
     </main>
   );
