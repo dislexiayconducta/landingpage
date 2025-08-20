@@ -7,6 +7,7 @@ import Modalities from "@/features/modalities";
 import Services from "@/features/services";
 import Team from "@/features/team";
 import { CTA } from "@/features/cta";
+import { Contact } from "@/features/contact";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Services />
       <CTA />
       <Team />
+      <Contact />
       
     </main>
   );

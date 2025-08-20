@@ -35,7 +35,7 @@ export default function Modalities() {
             Modalidades
           </h2>
 
-          <Link to="contact" smooth>
+          <Link to="contacto" smooth>
             <Button variant="secondary">
               Reservar <ArrowRight size={20} />
             </Button>

@@ -22,7 +22,7 @@ export default function Team() {
   const currentTeamCards = isLargeScreen ? teamCardsLarge : teamCardsSmall;
 
   return (
-    <section className="relative bg-background py-20 lg:py-40 z-20 px-4 sm:px-6 lg:px-8 xl:px-20">
+    <section className="relative bg-neutral-b0 py-20 lg:py-40 z-20 px-4 sm:px-6 lg:px-8 xl:px-20">
       <Element name="equipo" className="max-w-[1440px] mx-auto">
         <motion.h2
           className="flex items-center text-foreground text-5xl md:text-6xl lg:text-7xl font-medium mb-8 lg:mb-0"
@@ -139,7 +139,7 @@ const teamCardsLarge = [
     id: 5,
     content: <TeamMemberThree />,
     className: "col-span-1 h-[175px] lg:h-[420px]", // Segunda fila, primera columna - más baja
-    thumbnail: "/imgs/team/team-1.webp",
+    thumbnail: "/imgs/team/team-5.webp",
   },
   {
     id: 6,
@@ -175,7 +175,7 @@ const teamCardsLarge = [
     id: 11,
     content: <TeamMemberSeven />,
     className: "col-span-1 h-[175px] lg:h-[240px]", // Tercera fila, cuarta columna - altura media
-    thumbnail: "/imgs/team/team-5.webp",
+    thumbnail: "/imgs/team/team-1.webp",
   },
 ];
 
@@ -210,7 +210,7 @@ const teamCardsSmall = [
     id: 5,
     content: <TeamMemberThree />,
     className: "col-span-1 h-[175px] lg:h-[420px]", // Segunda fila, primera columna - más baja
-    thumbnail: "/imgs/team/team-1.webp",
+    thumbnail: "/imgs/team/team-5.webp",
   },
   {
     id: 6,
@@ -246,7 +246,7 @@ const teamCardsSmall = [
     id: 11,
     content: <TeamMemberSeven />,
     className: "col-span-1 h-[175px] lg:h-[240px]", // Tercera fila, cuarta columna - altura media
-    thumbnail: "/imgs/team/team-5.webp",
+    thumbnail: "/imgs/team/team-1.webp",
   },
 ];
 
