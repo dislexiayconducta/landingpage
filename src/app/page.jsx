@@ -1,4 +1,4 @@
-import { Navbar, SpinningTextDivider, TextDivider } from "@/components/shared";
+import { Navbar, SpinningTextDivider, TextDivider, Footer } from "@/components/shared";
 import AboutUs from "@/features/about-us/AboutUs";
 import ForWhom from "@/features/for-whom";
 import Hero from "@/features/hero";
@@ -26,7 +26,7 @@ export default function Home() {
       <CTA />
       <Team />
       <Contact />
-      
+      <Footer />
     </main>
   );
 }

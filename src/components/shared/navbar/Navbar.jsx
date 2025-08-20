@@ -108,7 +108,7 @@ export function Navbar() {
 
                   <div className="flex items-center gap-4">
                     <Link
-                      href="https://wa.me/5491133333333"
+                      href="#"
                       aria-label="WhatsApp"
                       className="size-8 flex items-center justify-center"
                       target="_blank"

@@ -24,13 +24,15 @@ const buttonVariants = cva(
         ghost:
           "hover:text-background-secondary-foreground text-background-secondary-foreground/80",
         link: "text-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full",
-        optionHeader: "text-background-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+        optionHeader: "text-background-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full",
+        optionFooter: "text-background-secondary-foreground font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full text-xl",
       },
       size: {
         default: "h-9 px-0 py-2 has-[>svg]:px-0",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+        sm: "h-7 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         option: "h-9 px-0 py-2 has-[>svg]:px-0",
+        optionSm: "h-8 px-0 py-2 has-[>svg]:px-0",
         icon: "size-9 [&_svg:not([class*='size-'])]:size-7",
         cta: "h-9 px-2.5 py-6 has-[>svg]:px-2.5 [&_svg:not([class*='size-'])]:size-5",
       },
