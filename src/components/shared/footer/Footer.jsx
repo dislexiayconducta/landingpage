@@ -32,10 +32,11 @@ export function Footer() {
         </div>
 
         {/* cta */}
-        <div className="flex flex-col justify-center items-center my-6">
+        <div className="flex flex-col justify-center items-center my-6 px-4">
           <p className="text-xl font-medium text-neutral-b40 text-center mb-2">
             Estás a un clic de empezar a mejorar.
           </p>
+
           <Link href="#" target="_blank">
             <Button
               variant="ternary"

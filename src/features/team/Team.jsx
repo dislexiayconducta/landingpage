@@ -2,21 +2,10 @@
 import { motion } from "framer-motion";
 import { Element } from "react-scroll";
 import { LayoutGrid } from "@/components/ui/layout-grid";
-import { useEffect, useState } from "react";
+import { useIsLargeScreen } from "./hooks/useIsLargeScreen";
 
 export default function Team() {
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024); // lg breakpoint
-    };
-
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
+  const isLargeScreen = useIsLargeScreen();
 
   // Seleccionar el array de tarjetas según el tamaño de pantalla
   const currentTeamCards = isLargeScreen ? teamCardsLarge : teamCardsSmall;
@@ -43,23 +32,29 @@ export default function Team() {
 
 // Componentes de contenido para cada miembro del equipo
 const TeamMemberOne = () => {
+  const isLargeScreen = useIsLargeScreen();
   return (
     <div>
-      <p className="font-bold md:text-2xl text-lg text-white mb-2">
-        Lic. Marcela Alegre
+      <p className="font-bold  lg:text-2xl text-base text-white lg:mb-2 mb-0">
+        {isLargeScreen ? "Marcela" : "Lic. Marcela"}
       </p>
-      <p className="font-normal text-sm text-white/80 mb-3">Directiva Responsable de DC</p>    
+      <p className="font-normal lg:text-base text-sm text-white/90">
+        {isLargeScreen ? "Fundadora - Licenciada" : "Fundadora"}
+      </p>
     </div>
   );
 };
 
 const TeamMemberTwo = () => {
+  const isLargeScreen = useIsLargeScreen();
   return (
     <div>
-      <p className="font-bold md:text-2xl text-lg text-white mb-2">
-        Lic. María Lourdes Mazzola Vernengo
+      <p className="font-bold lg:text-2xl text-base text-white lg:mb-2 mb-0">
+        {isLargeScreen ? "Lourdes" : "Lic. Lourdes"}
       </p>
-      <p className="font-normal text-lg text-white/80 mb-3">Directiva Responsable de DC</p>      
+      <p className="font-normal lg:text-base text-sm text-white/90">
+        {isLargeScreen ? "Fundadora - Licenciada" : "Fundadora"}
+      </p>
     </div>
   );
 };
@@ -97,18 +92,6 @@ const BeachScene = () => {
   return <></>;
 };
 
-const WaterReflection = () => {
-  return <></>;
-};
-
-const ElderlyPortrait = () => {
-  return <></>;
-};
-
-const GraduationPortrait = () => {
-  return <></>;
-};
-
 // Configuración de las 11 tarjetas del equipo para pantallas grandes (lg+)
 const teamCardsLarge = [
   {
@@ -121,19 +104,19 @@ const teamCardsLarge = [
     id: 2,
     content: <AbstractPattern />,
     className: "col-span-1 h-[175px] lg:h-[420px]", // Primera fila, segunda columna - más baja
-    thumbnail: "/imgs/team/team.png",
+    thumbnail: "/videos/team/deco-1.mp4",
   },
   {
     id: 3,
     content: <BeachScene />,
     className: "col-span-1 h-[175px] lg:h-[380px]", // Primera fila, tercera columna - altura media
-    thumbnail: "/imgs/team/team.png",
+    thumbnail: "/videos/team/deco-2.mp4",
   },
   {
     id: 4,
-    content: <TeamMemberTwo />,
+    content: <TeamMemberSix />,
     className: "col-span-1 h-[175px] lg:h-[460px]", // Primera fila, cuarta columna - más alta
-    thumbnail: "/imgs/team/Lic.Maria-Lourdes-Mazzola-Vernengo.webp",
+    thumbnail: "/imgs/team/team-4.webp",
   },
   {
     id: 5,
@@ -155,15 +138,15 @@ const teamCardsLarge = [
   },
   {
     id: 8,
-    content: <TeamMemberSix />,
+    content: <TeamMemberTwo />,
     className: "col-span-1 h-[175px] lg:h-[420px]", // Segunda fila, cuarta columna - más alta
-    thumbnail: "/imgs/team/team-4.webp",
+    thumbnail: "/imgs/team/Lic.Maria-Lourdes-Mazzola-Vernengo.webp",
   },
   {
     id: 9,
     content: <AbstractPattern />,
     className: "col-span-1 h-[175px] lg:h-[240px]", // Tercera fila, primera columna - más baja
-    thumbnail: "/imgs/team/team.png",
+    thumbnail: "/videos/team/deco-3.mp4",
   },
   {
     id: 10,
@@ -192,37 +175,37 @@ const teamCardsSmall = [
     id: 2,
     content: <AbstractPattern />,
     className: "col-span-1 h-[175px] lg:h-[420px]", // Primera fila, segunda columna - más baja
-    thumbnail: "/imgs/team/team.png",
+    thumbnail: "/videos/team/deco-1.mp4",
   },
   {
     id: 3,
-    content: <TeamMemberTwo />, // Cambiado: ahora es TeamMemberTwo
+    content: <TeamMemberSix />, // Cambiado: ahora es TeamMemberTwo
     className: "col-span-1 h-[175px] lg:h-[380px]", // Primera fila, tercera columna - altura media
-    thumbnail: "/imgs/team/Lic.Maria-Lourdes-Mazzola-Vernengo.webp", // Cambiado: thumbnail de TeamMemberTwo
+    thumbnail: "/imgs/team/team-4.webp", // Cambiado: thumbnail de TeamMemberTwo
   },
   {
     id: 4,
     content: <BeachScene />, // Cambiado: ahora es BeachScene
     className: "col-span-1 h-[175px] lg:h-[460px]", // Primera fila, cuarta columna - más alta
-    thumbnail: "/imgs/team/team.png", // Cambiado: thumbnail de BeachScene
+    thumbnail: "/videos/team/deco-2.mp4", // Cambiado: thumbnail de BeachScene
   },
   {
     id: 5,
     content: <TeamMemberThree />,
     className: "col-span-1 h-[175px] lg:h-[420px]", // Segunda fila, primera columna - más baja
-    thumbnail: "/imgs/team/team-5.webp",
+    thumbnail: "/imgs/team/team-3.webp",
   },
   {
     id: 6,
-    content: <TeamMemberFour />,
+    content: <TeamMemberTwo />,
     className: "col-span-1 h-[175px] lg:h-[380px] lg:-top-[40px]", // Segunda fila, segunda columna - altura media
-    thumbnail: "/imgs/team/team-2.webp",
+    thumbnail: "/imgs/team/Lic.Maria-Lourdes-Mazzola-Vernengo.webp",
   },
   {
     id: 7,
     content: <TeamMemberFive />,
     className: "col-span-1 h-[175px] lg:h-[420px] lg:-top-[80px]", // Segunda fila, tercera columna - más baja
-    thumbnail: "/imgs/team/team-3.webp",
+    thumbnail: "/imgs/team/team-5.webp",
   },
   {
     id: 8,
@@ -232,21 +215,21 @@ const teamCardsSmall = [
   },
   {
     id: 9,
-    content: <AbstractPattern />,
+    content: <TeamMemberSeven />,
     className: "col-span-1 h-[175px] lg:h-[240px]", // Tercera fila, primera columna - más baja
-    thumbnail: "/imgs/team/team.png",
+    thumbnail: "/imgs/team/team-1.webp",
   },
   {
     id: 10,
-    content: <TeamGroup />,
-    className: "col-span-2 h-[175px] lg:h-[320px] lg:-top-[80px]", // Tercera fila, segunda y tercera columna - más alta y ancha
-    thumbnail: "/imgs/team/team-full.webp",
+    content: <AbstractPattern />,
+    className: "col-span-3 h-[175px] lg:h-[320px] lg:-top-[80px]", // Tercera fila, segunda y tercera columna - más alta y ancha
+    thumbnail: "/videos/team/deco-3.mp4",
   },
   {
     id: 11,
-    content: <TeamMemberSeven />,
-    className: "col-span-1 h-[175px] lg:h-[240px]", // Tercera fila, cuarta columna - altura media
-    thumbnail: "/imgs/team/team-1.webp",
+    content: <TeamGroup />,
+    className: "col-span-3 h-[175px] lg:h-[240px]", // Tercera fila, cuarta columna - altura media
+    thumbnail: "/imgs/team/team-full.webp",
   },
 ];
 

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { images } from "./data/images";
 import { useFloatingEffect } from "@/lib/useFloatingEffect";
 import {
@@ -11,6 +11,10 @@ import Image from "next/image";
 
 function Highlights() {
   const containerRef = React.useRef(null);  
+  const isInView = useInView(containerRef, {
+    margin: "-100px 0px -100px 0px",
+    once: false
+  });
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -23,30 +27,34 @@ function Highlights() {
       className="bg-background-secondary-foreground relative min-h-[150vh] w-full overflow-hidden"
     >
       <div className="relative z-10 w-full max-w-[1440px] mx-auto overflow-hidden h-full flex items-center">
-        {/* Texto */}
-        <ScrollVelocityContainer className="fixed top-0 left-0 right-0 z-10">
-          <motion.h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mt-8 lg:mt-16">
-            <ScrollVelocityRow velocity={20} direction={1}>
-              Para todas las edades{"  "}
-            </ScrollVelocityRow>
-          </motion.h2>
-        </ScrollVelocityContainer>
-        
-        <ScrollVelocityContainer className="fixed top-1/2 -translate-y-1/2 left-0 right-0 z-10">
-          <motion.h3 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none">
-            <ScrollVelocityRow velocity={20} direction={-1}>
-              Multiformatos{"  "}
-            </ScrollVelocityRow>
-          </motion.h3>
-        </ScrollVelocityContainer>
-        
-        <ScrollVelocityContainer className="fixed bottom-0 left-0 right-0 z-10">
-          <motion.h4 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mb-8 lg:mb-16 text-right">
-            <ScrollVelocityRow velocity={20} direction={1}>
-              Planes híbridos{"  "}
-            </ScrollVelocityRow>
-          </motion.h4>
-        </ScrollVelocityContainer>
+        {/* Texto - Solo se renderiza cuando está en view */}
+        {isInView && (
+          <>
+            <ScrollVelocityContainer className="fixed top-0 left-0 right-0 z-10">
+              <motion.h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mt-8 lg:mt-16">
+                <ScrollVelocityRow velocity={20} direction={1}>
+                  Para todas las edades{"  "}
+                </ScrollVelocityRow>
+              </motion.h2>
+            </ScrollVelocityContainer>
+            
+            <ScrollVelocityContainer className="fixed top-1/2 -translate-y-1/2 left-0 right-0 z-10">
+              <motion.h3 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none">
+                <ScrollVelocityRow velocity={20} direction={-1}>
+                  Multiformatos{"  "}
+                </ScrollVelocityRow>
+              </motion.h3>
+            </ScrollVelocityContainer>
+            
+            <ScrollVelocityContainer className="fixed bottom-0 left-0 right-0 z-10">
+              <motion.h4 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mb-8 lg:mb-16 text-right">
+                <ScrollVelocityRow velocity={20} direction={1}>
+                  Planes híbridos{"  "}
+                </ScrollVelocityRow>
+              </motion.h4>
+            </ScrollVelocityContainer>
+          </>
+        )}
 
         {/* Imágenes */}
         <div className="relative flex items-center h-full min-h-[150vh] w-full my-12">

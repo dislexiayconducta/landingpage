@@ -1,61 +1,51 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const LayoutGrid = ({ cards }) => {
-  const [selected, setSelected] = useState(null);
-  const [lastSelected, setLastSelected] = useState(null);
-
-  const handleClick = (card) => {
-    setLastSelected(selected);
-    setSelected(card);
-  };
-
-  const handleOutsideClick = () => {
-    setLastSelected(selected);
-    setSelected(null);
-  };
-
   return (
     <div className="w-full h-full grid grid-cols-3 lg:grid-cols-4 max-w-[1440px] mx-auto gap-2 lg:gap-4 relative lg:pt-20">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
-            onClick={() => handleClick(card)}
             className={cn(
               card.className,
-              "relative overflow-hidden",
-              selected?.id === card.id
-                ? "rounded-none cursor-pointer absolute inset-0 h-1/2 w-full lg:w-1/2 lg:h-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
-                : lastSelected?.id === card.id
-                ? "z-40 bg-white rounded-none h-full w-full"
-                : "bg-white rounded-none h-full w-full"
+              "relative overflow-hidden bg-white rounded-none h-full w-full"
             )}
-            layoutId={`card-${card.id}`}
             transition={{ duration: 0.6, ease: "easeInOut" }}
           >
-            {selected?.id === card.id && <SelectedCard selected={selected} />}
             <ImageComponent card={card} />
+            <CardContent card={card} />
           </motion.div>
         </div>
       ))}
-      <motion.div
-        onClick={handleOutsideClick}
-        className={cn(
-          "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-60",
-          selected?.id ? "pointer-events-auto" : "pointer-events-none"
-        )}
-        animate={{ opacity: selected?.id ? 0.1 : 0 }}
-      />
     </div>
   );
 };
 
 const ImageComponent = ({ card }) => {
+  const isVideo = card.thumbnail?.endsWith('.mp4');
+  
+  if (isVideo) {
+    return (
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className={cn(
+          "object-cover object-center absolute inset-0 h-full w-full transition-all duration-300"
+        )}
+      >
+        <source src={card.thumbnail} type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+    );
+  }
+
   return (
     <motion.img
-      layoutId={`image-${card.id}-image`}
       src={card.thumbnail}
       height="500"
       width="500"
@@ -68,40 +58,13 @@ const ImageComponent = ({ card }) => {
   );
 };
 
-const SelectedCard = ({ selected }) => {
+const CardContent = ({ card }) => {
   return (
-    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-none shadow-2xl relative z-[60]">
-      <motion.div
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 0.6,
-        }}
-        className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
-      />
-      <motion.div
-        layoutId={`content-${selected?.id}`}
-        initial={{
-          opacity: 0,
-          y: 100,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        exit={{
-          opacity: 0,
-          y: 100,
-        }}
-        transition={{
-          duration: 0.3,
-          ease: "easeInOut",
-        }}
-        className="relative px-8 pb-4 z-[70]"
-      >
-        {selected?.content}
-      </motion.div>
+    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-none shadow-2xl relative z-60">
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-40" />
+      <div className="relative lg:px-6 lg:pb-6 px-1 pb-1 z-70 text-white">
+        {card.content}
+      </div>
     </div>
   );
 };
