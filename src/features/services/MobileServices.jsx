@@ -59,14 +59,14 @@ function MobileServicesContent() {
 
   return (
     <>
-      <motion.h2
+      <motion.span
         className="text-background-secondary-foreground text-5xl md:text-6xl lg:text-7xl font-medium mb-8 xl:mb-10"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         Servicios
-      </motion.h2>
+      </motion.span>
       <div className="relative z-0">
         <div className="w-full space-y-6 my-6">
           {SERVICE_KEYS.map((key, index) => {
@@ -115,7 +115,7 @@ function MobileServicesContent() {
 
 export default function MobileServices() {
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden block">
       <MobileServicesProvider>
         <MobileServicesContent />
       </MobileServicesProvider>

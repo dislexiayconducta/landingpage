@@ -35,9 +35,9 @@ const TeamMemberOne = () => {
   const isLargeScreen = useIsLargeScreen();
   return (
     <div>
-      <p className="font-bold  lg:text-2xl text-base text-white lg:mb-2 mb-0">
+      <h3 className="font-bold  lg:text-2xl text-base text-white lg:mb-2 mb-0">
         {isLargeScreen ? "Marcela" : "Lic. Marcela"}
-      </p>
+      </h3>
       <p className="font-normal lg:text-base text-sm text-white/90">
         {isLargeScreen ? "Fundadora - Licenciada" : "Fundadora"}
       </p>
@@ -49,9 +49,9 @@ const TeamMemberTwo = () => {
   const isLargeScreen = useIsLargeScreen();
   return (
     <div>
-      <p className="font-bold lg:text-2xl text-base text-white lg:mb-2 mb-0">
+      <h3 className="font-bold lg:text-2xl text-base text-white lg:mb-2 mb-0">
         {isLargeScreen ? "Lourdes" : "Lic. Lourdes"}
-      </p>
+      </h3>
       <p className="font-normal lg:text-base text-sm text-white/90">
         {isLargeScreen ? "Fundadora - Licenciada" : "Fundadora"}
       </p>

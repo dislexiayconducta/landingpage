@@ -12,19 +12,19 @@ const CTA = () => {
       {/* Contenido centrado */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Label superior */}
-        <div className="mb-4 flex justify-center items-center">
+        <h2 className="mb-4 flex justify-center items-center">
           <Dot size={24} className="text-background-secondary-foreground" />{" "}
           <span className="text-background-secondary-foreground text-xl font-semibold">
             Test
           </span>
-        </div>
+        </h2>
 
         {/* Título principal */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-background-secondary-foreground mb-2 leading-tight">
+        <h3 className="text-4xl md:text-5xl lg:text-6xl font-medium text-background-secondary-foreground mb-2 leading-tight">
           Detectar a tiempo
           <br />
           hace la diferencia
-        </h2>
+        </h3>
 
         {/* Párrafo descriptivo */}
         <p className="text-lg md:text-xl text-neutral-b30 font-medium mb-6 max-w-3xl mx-auto leading-relaxed">
@@ -41,6 +41,7 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
           <Link
             href="https://tally.so/r/w57BJM"
+            title="Test Dislexia"
             target="_blank"
             className="group"
           >
@@ -52,6 +53,7 @@ const CTA = () => {
 
           <Link
             href="https://tally.so/r/n098j6"
+            title="Test Ansiedad"
             target="_blank"
             className="group"
           >
@@ -63,6 +65,7 @@ const CTA = () => {
 
           <Link
             href="https://tally.so/r/wLrK4p"
+            title="Test Discalculia"
             target="_blank"
             className="group"
           >

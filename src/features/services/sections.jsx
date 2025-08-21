@@ -160,7 +160,7 @@ export function PlayAttention() {
         en la NASA.
       </p>
 
-      <Link href="https://playattentionargentina.com/" target="_blank">
+      <Link href="https://playattentionargentina.com/" title="Play Attention® Argentina" target="_blank">
         <Button variant="ternary" size="cta">
           Visitar Play Attention® Argentina <ArrowUpRight size={24} />
         </Button>

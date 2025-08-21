@@ -38,7 +38,7 @@ const ImageComponent = ({ card }) => {
           "object-cover object-center absolute inset-0 h-full w-full transition-all duration-300"
         )}
       >
-        <source src={card.thumbnail} type="video/mp4" />
+        <source src={card.thumbnail} type="video/mp4" title="video decorativo" />
         Tu navegador no soporta el elemento de video.
       </video>
     );
@@ -47,12 +47,13 @@ const ImageComponent = ({ card }) => {
   return (
     <motion.img
       src={card.thumbnail}
+      alt="miembro del equipo"
+      title="miembro del equipo"
       height="500"
       width="500"
       className={cn(
         "object-cover object-center absolute inset-0 h-full w-full transition-all duration-300"
-      )}
-      alt="thumbnail"
+      )}      
       loading="lazy"
     />
   );

@@ -37,7 +37,7 @@ export function Footer() {
             Estás a un clic de empezar a mejorar.
           </p>
 
-          <Link href="#" target="_blank">
+          <Link href="#" title="whatsapp" target="_blank">
             <Button
               variant="ternary"
               size="cta"
@@ -105,6 +105,7 @@ export function Footer() {
                   <li key={link.id}>
                     <Link
                       href={link.href}
+                      title={link.label}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -126,6 +127,7 @@ export function Footer() {
             <Image
               src="/logo.svg"
               alt="logo DislexiaConducta"
+              title="logo DislexiaConducta"
               width={60}
               height={60}
               loading="eager"

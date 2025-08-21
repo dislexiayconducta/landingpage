@@ -56,7 +56,7 @@ export default function RightTitles({ scrollProgress }) {
           }}
         >
           {key === activeKey && <DotIcon className="min-w-12 min-h-12 -ml-12 text-neutral-b0" />}
-          <span
+          <h3
             className={
               key === activeKey
                 ? "text-neutral-b0 text-2xl lg:text-3xl xl:text-5xl font-semibold"
@@ -64,7 +64,7 @@ export default function RightTitles({ scrollProgress }) {
             }
           >
             {TITLES[key]}
-          </span>
+          </h3>
         </motion.div>
       ))}
     </div>

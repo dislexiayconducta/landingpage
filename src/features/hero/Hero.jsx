@@ -61,6 +61,7 @@ export default function Hero() {
             <video
               className="w-full h-full object-cover rounded-tl-[80px] rounded-bl-[80px]"
               src="/videos/banner.mp4"
+              title="video banner"
               playsInline
               autoPlay
               loop

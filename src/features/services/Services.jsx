@@ -25,11 +25,11 @@ export default function Services() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h3 className="text-background-secondary-foreground text-2xl md:text-3xl lg:text-4xl font-medium mb-4">
+          <div className="text-background-secondary-foreground text-2xl md:text-3xl lg:text-4xl font-medium mb-4">
             ¿Querés empezar tu proceso hoy?
-          </h3>
+          </div>
 
-          <Link href="#" target="_blank">
+          <Link href="#" title="contactar" target="_blank">
             <Button
               variant="ternary"
               size="cta"

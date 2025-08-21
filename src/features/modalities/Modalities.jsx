@@ -62,6 +62,7 @@ export default function Modalities() {
               <img
                 src={modality.image}
                 alt={modality.alt}
+                title={modality.alt}
                 className="w-full h-full object-cover"
               />
               {/* Overlay con texto en hover */}
@@ -89,12 +90,13 @@ export default function Modalities() {
                     <img
                       src={modality.image}
                       alt={modality.alt}
+                      title={modality.alt}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
-                      <h3 className="text-white text-3xl font-bold mb-2">
+                      <span className="text-white text-3xl font-bold mb-2">
                         {modality.title}
-                      </h3>
+                      </span>
                       <p className="text-white/90 text-base font-medium">
                         {modality.subtitle}
                       </p>

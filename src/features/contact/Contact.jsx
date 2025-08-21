@@ -11,7 +11,7 @@ const Contact = () => {
     <section className="relative py-20 overflow-hidden z-20 bg-background px-4 sm:px-6 lg:px-8 xl:px-20">
       <Element name="contacto" className="relative z-10 max-w-[1440px] mx-auto">
         {/* Título de sección */}
-        <motion.div
+        <motion.h2
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -22,7 +22,7 @@ const Contact = () => {
           <span className="text-neutral-b800 text-xl font-semibold">
             Contáctanos
           </span>
-        </motion.div>
+        </motion.h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Lado izquierdo - Vació */}
           <div></div>
@@ -37,7 +37,7 @@ const Contact = () => {
           >
             {/* Título principal */}
             <div className="space-y-2">
-              <motion.h2
+              <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -46,7 +46,7 @@ const Contact = () => {
               >
                 Tu mejor versión te espera. <br />
                 Podemos ayudarte.
-              </motion.h2>
+              </motion.h3>
             </div>
 
             {/* Botón de contacto */}
@@ -57,7 +57,7 @@ const Contact = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
               viewport={{ once: true }}
             >
-              <Link href="#" target="_blank">
+              <Link href="#" title="contactar" target="_blank">
                 <Button
                   variant="primary"
                   size="cta"
@@ -83,7 +83,7 @@ const Contact = () => {
               <p className="text-neutral-b300 text-xl font-medium">
                 Encontranos en redes
               </p>
-              <Link href="https://www.instagram.com/dislexiayconducta/" target="_blank">
+              <Link href="https://www.instagram.com/dislexiayconducta/" title="Instagram" target="_blank">
                 <Button
                   variant="link"
                 >

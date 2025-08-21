@@ -46,6 +46,7 @@ export function Navbar() {
               <Image
                 src="/logo.svg"
                 alt="logo DislexiaConducta"
+                title="logo DislexiaConducta"
                 width={24}
                 height={24}
                 loading="eager"
@@ -109,6 +110,7 @@ export function Navbar() {
                   <div className="flex items-center gap-4">
                     <Link
                       href="#"
+                      title="WhatsApp"
                       aria-label="WhatsApp"
                       className="size-8 flex items-center justify-center"
                       target="_blank"
@@ -117,6 +119,7 @@ export function Navbar() {
                     </Link>
                     <Link
                       href="https://www.instagram.com/dislexiayconducta/"
+                      title="Instagram"
                       aria-label="Instagram"
                       className="size-8 flex items-center justify-center"
                       target="_blank"

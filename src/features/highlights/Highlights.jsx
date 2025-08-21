@@ -31,27 +31,27 @@ function Highlights() {
         {isInView && (
           <>
             <ScrollVelocityContainer className="fixed top-0 left-0 right-0 z-10">
-              <motion.h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mt-8 lg:mt-16">
+              <motion.span className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mt-8 lg:mt-16">
                 <ScrollVelocityRow velocity={20} direction={1}>
                   Para todas las edades{"  "}
                 </ScrollVelocityRow>
-              </motion.h2>
+              </motion.span>
             </ScrollVelocityContainer>
             
             <ScrollVelocityContainer className="fixed top-1/2 -translate-y-1/2 left-0 right-0 z-10">
-              <motion.h3 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none">
+              <motion.span className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none">
                 <ScrollVelocityRow velocity={20} direction={-1}>
                   Multiformatos{"  "}
                 </ScrollVelocityRow>
-              </motion.h3>
+              </motion.span>
             </ScrollVelocityContainer>
             
             <ScrollVelocityContainer className="fixed bottom-0 left-0 right-0 z-10">
-              <motion.h4 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mb-8 lg:mb-16 text-right">
+              <motion.span className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-neutral-b200 leading-none mb-8 lg:mb-16 text-right">
                 <ScrollVelocityRow velocity={20} direction={1}>
                   Planes híbridos{"  "}
                 </ScrollVelocityRow>
-              </motion.h4>
+              </motion.span>
             </ScrollVelocityContainer>
           </>
         )}
@@ -103,7 +103,7 @@ function Highlights() {
                 >
                   <Image
                     src={image.src || "/placeholder.svg"}
-                    alt={image.alt}
+                    alt={image.alt}                    
                     title={image.alt}
                     className="w-full h-full object-cover"
                     loading="lazy"
