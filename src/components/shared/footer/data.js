@@ -42,12 +42,12 @@ export const socialLinks = [
     id: 2,
     label: 'Facebook',
     platform: 'facebook',
-    href: '#'
+    href: 'https://www.facebook.com/share/1LLQ3gcdYV/'
   },
   {
     id: 3,
     label: 'Whatsapp',
     platform: 'whatsapp',
-    href: '#'
+    href: 'https://wa.me/5491130472408?text=Hola! Me gustaría obtener más información sobre los servicios de Dislexia y Conducta.'
   }
 ];

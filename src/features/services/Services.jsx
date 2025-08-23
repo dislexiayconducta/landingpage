@@ -29,7 +29,12 @@ export default function Services() {
             ¿Querés empezar tu proceso hoy?
           </div>
 
-          <Link href="#" title="contactar" target="_blank">
+          <Link
+            href="https://wa.me/5491130472408?text=Hola! Me gustaría obtener más información sobre los servicios de Dislexia y Conducta."
+            title="WhatsApp"
+            aria-label="WhatsApp"
+            target="_blank"
+          >
             <Button
               variant="ternary"
               size="cta"

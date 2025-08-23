@@ -109,7 +109,7 @@ export function Navbar() {
 
                   <div className="flex items-center gap-4">
                     <Link
-                      href="#"
+                      href="https://wa.me/5491130472408?text=Hola! Me gustaría obtener más información sobre los servicios de Dislexia y Conducta." 
                       title="WhatsApp"
                       aria-label="WhatsApp"
                       className="size-8 flex items-center justify-center"

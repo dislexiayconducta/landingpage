@@ -57,7 +57,12 @@ const Contact = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
               viewport={{ once: true }}
             >
-              <Link href="#" title="contactar" target="_blank">
+              <Link
+                href="https://wa.me/5491130472408?text=Hola! Me gustaría obtener más información sobre los servicios de Dislexia y Conducta."
+                title="WhatsApp"
+                aria-label="WhatsApp"
+                target="_blank"
+              >
                 <Button
                   variant="primary"
                   size="cta"
@@ -83,10 +88,12 @@ const Contact = () => {
               <p className="text-neutral-b300 text-xl font-medium">
                 Encontranos en redes
               </p>
-              <Link href="https://www.instagram.com/dislexiayconducta/" title="Instagram" target="_blank">
-                <Button
-                  variant="link"
-                >
+              <Link
+                href="https://www.instagram.com/dislexiayconducta/"
+                title="Instagram"
+                target="_blank"
+              >
+                <Button variant="link">
                   Instagram <ArrowUpRight size={24} />
                 </Button>
               </Link>

@@ -37,7 +37,12 @@ export function Footer() {
             Estás a un clic de empezar a mejorar.
           </p>
 
-          <Link href="#" title="whatsapp" target="_blank">
+          <Link
+            href="https://wa.me/5491130472408?text=Hola! Me gustaría obtener más información sobre los servicios de Dislexia y Conducta."
+            title="whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               variant="ternary"
               size="cta"
@@ -69,10 +74,16 @@ export function Footer() {
               </div>
               <div>
                 <p className="font-semibold text-base">
-                  Escobar - Buenos Aires.
+                  Puertos Escobar - Buenos Aires.
                 </p>
-                <p className="font-medium text-base">Próximamente.</p>
+
               </div>
+              {/* mail to */}
+              <a href="mailto:consultas@dislexiayconducta.com" title="email" >              
+                  <p className="font-medium text-base" >
+                    consultas@dislexiayconducta.com
+                  </p>
+              </a>
             </div>
           </div>
 
