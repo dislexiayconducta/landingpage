@@ -1,0 +1,16 @@
+{
+  "name": "Dislexia y Conducta | Evaluación y Tratamientos",
+  "short_name": "Dislexia y Conducta",
+  "description": "Dislexia y Conducta es una clínica especializada en evaluación, diagnóstico y tratamiento de dificultades del aprendizaje, conducta y ansiedad. A través de la neurociencia, tecnologías innovadoras como Play Attention y programas personalizados, ayudamos a niños, adolescentes y adultos a desarrollar su máximo potencial.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
