@@ -11,7 +11,7 @@ export function TextDivider() {
           pauseOnHover={false}
           repeat={4}>
           <span className="px-6 text-background-secondary-foreground mix-blend-exclusion whitespace-nowrap leading-none font-medium tracking-tight uppercase text-[clamp(2.5rem,10vw,10rem)]">
-            Programas Personalizados
+            Programas&nbsp;&nbsp;&nbsp;Personalizados
           </span>
         </Marquee>
       </div>
