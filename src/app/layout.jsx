@@ -101,12 +101,12 @@ export const metadata = {
       "Dislexia y Conducta | Innovación tecnológica aplicada al aprendizaje",
     description:
       "Dislexia y Conducta ofrece evaluaciones, diagnósticos y tratamientos basados en neurociencia para niños, adolescentes y adultos.",
-    url: "https://dislexiayconducta.vercel.app/",
+    url: "https://dislexiayconducta.com/",
     siteName: "Dislexia y Conducta",
     locale: "es_AR",
     images: [
       {
-        url: "https://dislexiayconducta.vercel.app/banner.png",
+        url: "https://dislexiayconducta.com/banner.png",
         width: 1200,
         height: 630,
         alt: "Dislexia y Conducta | Evaluación y Tratamientos",
