@@ -7,16 +7,16 @@ export default function Hero() {
       <div className="max-w-[1440px] mx-auto w-full flex flex-col items-center justify-center ">
         <div className="text-background-secondary-foreground leading-none grid gap-y-0 w-full">
           <h1
-            className="justify-self-start font-medium leading-tight sm:leading-[0.85] px-4 sm:px-6 lg:px-8 xl:px-20"
+            className="justify-self-start font-medium leading-tight sm:leading-[0.85] lg:leading-none px-4 sm:px-6 lg:px-8 xl:px-20"
             style={{
-              fontSize: "clamp(2rem, min(8vw, 12vh), 10rem)",
+              fontSize: "clamp(2rem, min(8vw, 10vh), 10rem)",
             }}
           >
             Dislexia & Conducta
           </h1>
 
           <motion.span
-            className="sm:justify-self-end flex flex-col sm:flex-row font-medium leading-tight sm:leading-[0.85] px-4 sm:px-6 lg:px-8 xl:px-20 overflow-hidden"
+            className="sm:justify-self-end flex flex-col sm:flex-row sm:gap-2 font-medium leading-tight sm:leading-[0.85] lg:leading-none px-4 sm:px-6 lg:px-8 xl:px-20 overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -33,7 +33,7 @@ export default function Hero() {
           </motion.span>
 
           <motion.span
-            className="justify-self-start block font-medium leading-tight sm:leading-[0.85] px-4 sm:px-6 lg:px-8 xl:px-20"
+            className="justify-self-start block font-medium leading-tight sm:leading-[0.85] lg:leading-none px-4 sm:px-6 lg:px-8 xl:px-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
@@ -45,7 +45,7 @@ export default function Hero() {
           </motion.span>
 
           <motion.span
-            className="justify-self-end block font-medium leading-tight sm:leading-[0.85] px-4 sm:px-6 lg:px-8 xl:px-20"
+            className="justify-self-end block font-medium leading-tight sm:leading-[0.85] lg:leading-none px-4 sm:px-6 lg:px-8 xl:px-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
