@@ -233,7 +233,7 @@ const teamCardsSmall = [
   {
     id: 1,
     content: <TeamMemberOne />,
-    className: "col-span-1 h-[220px] lg:h-[460px]", // Primera fila, primera columna - más alta
+    className: "col-span-1 h-[175px] lg:h-[460px]", // Primera fila, primera columna - más alta
     thumbnail: "/imgs/team/Lic.Marcela-Alegre.webp",
     title: "Lic. Marcela Alegre",
     description:
@@ -243,14 +243,14 @@ const teamCardsSmall = [
   {
     id: 2,
     content: <AbstractPattern />,
-    className: "col-span-1 h-[220px] lg:h-[420px]", // Primera fila, segunda columna - más baja
+    className: "col-span-1 h-[175px] lg:h-[420px]", // Primera fila, segunda columna - más baja
     thumbnail: "/videos/team/deco-1.mp4",
     orientation: "vertical",
   },
   {
     id: 3,
     content: <TeamMemberTwo />, // Cambiado: ahora es TeamMemberTwo
-    className: "col-span-1 h-[220px] lg:h-[380px]", // Primera fila, tercera columna - altura media
+    className: "col-span-1 h-[175px] lg:h-[380px]", // Primera fila, tercera columna - altura media
     thumbnail: "/imgs/team/Lic.Maria-Lourdes-Mazzola-Vernengo.webp",
     title: "Lic. Lourdes Mazzola",
     description:
@@ -260,42 +260,42 @@ const teamCardsSmall = [
   {
     id: 4,
     content: <BeachScene />, // Cambiado: ahora es BeachScene
-    className: "col-span-1 h-[175px] lg:h-[460px]", // Primera fila, cuarta columna - más alta
+    className: "col-span-1 h-[150px] lg:h-[460px]", // Primera fila, cuarta columna - más alta
     thumbnail: "/videos/team/deco-2.mp4", // Cambiado: thumbnail de BeachScene
     orientation: "vertical",
   },
   {
     id: 5,
     content: <TeamMemberThree />,
-    className: "col-span-1 h-[175px] lg:h-[320px]", // Segunda fila, primera columna - más baja
+    className: "col-span-1 h-[150px] lg:h-[320px]", // Segunda fila, primera columna - más baja
     thumbnail: "/imgs/team/team-5.webp",
     orientation: "vertical",
   },
   {
     id: 6,
     content: <TeamMemberSix />,
-    className: "col-span-1 h-[175px] lg:h-[300px] lg:-top-[30px]", // Segunda fila, segunda columna - altura media
+    className: "col-span-1 h-[150px] lg:h-[300px] lg:-top-[30px]", // Segunda fila, segunda columna - altura media
     thumbnail: "/imgs/team/team-4.webp",
     orientation: "vertical",
   },
   {
     id: 7,
     content: <TeamMemberFive />,
-    className: "col-span-1 h-[150px] lg:h-[320px] lg:-top-[60px]", // Segunda fila, tercera columna - más baja
+    className: "col-span-1 h-[130px] lg:h-[320px] lg:-top-[60px]", // Segunda fila, tercera columna - más baja
     thumbnail: "/imgs/team/team-3.webp",
     orientation: "vertical",
   },
   {
     id: 8,
     content: <TeamMemberFour />,
-    className: "col-span-1 h-[150px] lg:h-[320px]", // Segunda fila, cuarta columna - más alta
+    className: "col-span-1 h-[130px] lg:h-[320px]", // Segunda fila, cuarta columna - más alta
     thumbnail: "/imgs/team/team-2.webp",
     orientation: "vertical",
   },
   {
     id: 9,
     content: <TeamMemberSeven />,
-    className: "col-span-1 h-[150px] lg:h-[180px]", // Tercera fila, primera columna - más baja
+    className: "col-span-1 h-[130px] lg:h-[180px]", // Tercera fila, primera columna - más baja
     thumbnail: "/imgs/team/team-1.webp",
     orientation: "vertical",
   },
