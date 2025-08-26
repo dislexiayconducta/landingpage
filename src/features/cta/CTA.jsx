@@ -14,8 +14,8 @@ const CTA = () => {
         {/* Label superior */}
         <h2 className="mb-4 flex justify-center items-center">
           <Dot size={24} className="text-background-secondary-foreground" />{" "}
-          <span className="text-background-secondary-foreground text-xl font-semibold">
-            Test
+          <span className="text-background-secondary-foreground text-2xl font-semibold">
+            Completa el test
           </span>
         </h2>
 
@@ -31,7 +31,7 @@ const CTA = () => {
           Realiza una breve autoevaluación online para detectar posibles signos
           de <span className="font-semibold">dislexia</span>,{" "}
           <span className="font-semibold">discalculia</span> o{" "}
-          <span className="font-semibold">ansiedad</span>. 
+          <span className="font-semibold">ansiedad</span>.
         </p>
         <p className="text-lg md:text-xl text-neutral-b30 font-semibold mb-6 max-w-3xl mx-auto leading-relaxed">
           Resultados inmediatos y orientativos para guiar el próximo paso.

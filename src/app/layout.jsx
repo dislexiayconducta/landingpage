@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import { LenisProvider } from "@/components/providers/LenisProvider";
+import { WhatsAppFloat } from "@/components/shared";
 
 export const neueHaasDisplay = localFont({
   src: [
@@ -145,7 +146,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={`${neueHaasDisplay.variable} antialiased`}>
-        <LenisProvider>{children}</LenisProvider>
+        <LenisProvider>
+          {children}
+          <WhatsAppFloat />
+        </LenisProvider>
       </body>
     </html>
   );
