@@ -10,21 +10,20 @@ import Image from "next/image";
 export function Footer() {
   return (
     <footer className="relative bg-background-secondary text-background-secondary-foreground pt-16 pb-4 z-20 outline-[8px] outline-offset-[-8px] lg:outline-[12px] outline-background">
-      <div className="max-w-full mx-auto">
+      <div className="max-w-min mx-auto">
         {/* Header */}
-        <div className="w-full text-center mb-16">
+        <div className="w-full text-center mb-16 px-4">
           <h2
             className="font-medium leading-tight lg:flex hidden"
             style={{
-              fontSize: "clamp(2rem, 12vw, 25rem)",
+              fontSize: "clamp(2rem, 11vw, 20rem)",
               minHeight: "clamp(3rem, 15vw, 30rem)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               width: "100%",
               whiteSpace: "nowrap",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
+              overflow: "visible",
             }}
           >
             Dislexia & Conducta
@@ -82,6 +81,12 @@ export function Footer() {
               <a href="mailto:consultas@dislexiayconducta.com" title="email" >              
                   <p className="font-medium text-base" >
                     consultas@dislexiayconducta.com
+                  </p>
+              </a>
+              {/* phone */}
+              <a href="tel:+5491130472408" title="teléfono" >              
+                  <p className="font-medium text-base" >
+                    +54 9 11 3047-2408
                   </p>
               </a>
             </div>

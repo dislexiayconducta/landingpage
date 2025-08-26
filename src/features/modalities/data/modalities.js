@@ -21,7 +21,8 @@ export const modalitiesData = [
     alt: "Biofeedback y Monitoreo",
     title: "Play Attention®",
     subtitle: "Neurotecnología",
-    delay: 0.3
+    delay: 0.3,
+    href: "https://playattentionargentina.com/"
   },
   {
     id: 4,
