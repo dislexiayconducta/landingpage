@@ -35,8 +35,8 @@ export const LayoutGrid = ({ cards }) => {
               selected?.id === card.id
                 ? `rounded-none absolute inset-0 m-auto z-50 flex justify-center items-center flex-wrap flex-col ${
                     card.orientation === "horizontal"
-                      ? "lg:w-full h-1/3 lg:h-1/2"
-                      : "lg:w-1/3 h-1/2 lg:h-1/2"
+                      ? "lg:w-1/2 h-1/2 lg:h-1/2"
+                      : "lg:w-1/3 h-full lg:h-1/2"
                   }`
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-none h-full w-full"
