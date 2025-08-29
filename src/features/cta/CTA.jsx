@@ -27,9 +27,12 @@ const CTA = () => {
         </h3>
 
         {/* Párrafo descriptivo */}
-        <p className="text-lg md:text-xl text-neutral-b30 font-medium mb-6 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-neutral-b30 font-medium max-w-3xl mx-auto leading-relaxed">
           Realiza una breve autoevaluación online para detectar posibles signos
-          de <span className="font-semibold">dislexia</span>,{" "}
+          de
+        </p>
+        <p className="text-lg md:text-xl text-neutral-b30 font-medium mb-6 max-w-3xl mx-auto leading-relaxed">
+          <span className="font-semibold">dislexia</span>,{" "}
           <span className="font-semibold">discalculia</span> o{" "}
           <span className="font-semibold">ansiedad</span>.
         </p>

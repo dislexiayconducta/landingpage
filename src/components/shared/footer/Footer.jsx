@@ -55,9 +55,9 @@ export function Footer() {
 
         {/* Main Footer Content */}
         <div className="flex justify-between items-center flex-col-reverse lg:flex-row  gap-8 mt-16 px-4 sm:px-6 lg:px-8 xl:px-20">
-          {/* Left Column - DislexiaConducta Info */}
+          {/* Left Column - Dislexia&Conducta Info */}
           <div className="space-y-4 max-w-md">
-            <h3 className="text-xl font-bold mb-4">DislexiaConducta</h3>
+            <h3 className="text-xl font-bold mb-4">Dislexia&Conducta</h3>
             <p className="text-lg font-medium text-neutral-b40 leading-none mb-2">
               Espacio tecnológico e invocador para el diagnóstico,
               acompañamiento, asistencia y abordaje de los diferentes trastornos
@@ -142,8 +142,8 @@ export function Footer() {
           <div className="mb-4 flex justify-center">
             <Image
               src="/logo.svg"
-              alt="logo DislexiaConducta"
-              title="logo DislexiaConducta"
+              alt="logo Dislexia&Conducta"
+              title="logo Dislexia&Conducta"
               width={60}
               height={60}
               loading="eager"
@@ -152,7 +152,7 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm">2025 Dislexia y conducta.</p>
+          <p className="text-sm">2025 © Dislexia y Conducta </p>
         </div>
       </div>
     </footer>

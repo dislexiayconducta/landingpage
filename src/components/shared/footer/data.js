@@ -11,7 +11,7 @@ export const navigationLinks = [
   },
   {
     id: 3,
-    label: 'Para quien',
+    label: 'Para quién',
     to: "para-ti",
   },
   {

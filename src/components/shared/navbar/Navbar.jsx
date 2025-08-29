@@ -42,7 +42,7 @@ export function Navbar() {
               smooth
               className="text-neutral-b0 font-medium text-2xl cursor-pointer flex items-center gap-2"
             >
-              DislexiaConducta{" "}
+              Dislexia&Conducta{" "}
               <Image
                 src="/logo.svg"
                 alt="logo DislexiaConducta"

@@ -160,7 +160,11 @@ export function PlayAttention() {
         en la NASA.
       </p>
 
-      <Link href="https://playattentionargentina.com/" title="Play Attention® Argentina" target="_blank">
+      <Link
+        href="https://playattentionargentina.com/"
+        title="Play Attention® Argentina"
+        target="_blank"
+      >
         <Button variant="ternary" size="cta">
           Visitar Play Attention® Argentina <ArrowUpRight size={24} />
         </Button>
@@ -183,8 +187,8 @@ export function Mindfulness() {
   return (
     <motion.div {...base} className="space-y-3">
       <p className="text-neutral-b0 text-base sm:text-lg md:text-xl font-medium">
-        Prácticas guiadas con realidad virtual y/o con tecnología de play
-        attention para que sea concreta tu vivencia de atención plena.
+        Prácticas guiadas con realidad virtual y/o con tecnología de Play
+        Attention® para que sea concreta tu vivencia de atención plena.
       </p>
     </motion.div>
   );
