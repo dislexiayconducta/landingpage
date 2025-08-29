@@ -1,7 +1,6 @@
 "use client";
 import { Link as LinkScroll } from "react-scroll";
 import { Button } from "../../ui/button";
-import Image from "next/image";
 import { Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLenis } from "@/lib/useLenis";
@@ -40,18 +39,9 @@ export function Navbar() {
             <LinkScroll
               to="inicio"
               smooth
-              className="text-neutral-b0 font-medium text-2xl cursor-pointer flex items-center gap-2"
+              className="text-neutral-b0 font-bold text-2xl cursor-pointer flex items-center gap-2"
             >
-              Dislexia&Conducta{" "}
-              <Image
-                src="/logo.svg"
-                alt="logo DislexiaConducta"
-                title="logo DislexiaConducta"
-                width={24}
-                height={24}
-                loading="eager"
-                priority
-              />
+              Dislexia&Conducta             
             </LinkScroll>
           </div>
 

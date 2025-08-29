@@ -55,18 +55,6 @@ const CTA = () => {
           </Link>
 
           <Link
-            href="https://tally.so/r/n098j6"
-            title="Test Ansiedad"
-            target="_blank"
-            className="group"
-          >
-            <Button variant="secondary" className="w-full sm:max-w-max">
-              Ansiedad
-              <ArrowUpRight size={24} />
-            </Button>
-          </Link>
-
-          <Link
             href="https://tally.so/r/wLrK4p"
             title="Test Discalculia"
             target="_blank"
@@ -74,6 +62,18 @@ const CTA = () => {
           >
             <Button variant="secondary" className="w-full sm:max-w-max">
               Discalculia
+              <ArrowUpRight size={24} />
+            </Button>
+          </Link>
+
+          <Link
+            href="https://tally.so/r/n098j6"
+            title="Test Ansiedad"
+            target="_blank"
+            className="group"
+          >
+            <Button variant="secondary" className="w-full sm:max-w-max">
+              Ansiedad
               <ArrowUpRight size={24} />
             </Button>
           </Link>
